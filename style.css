@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #d7e8ec;
+    color: #333;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.logo span {
+    color: #00d1ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;          
+    height: 70px;        
+    text-align: center;
+    border: 2px solid #00d1ff;
+    border-radius: 50%;
+    transition: 0.3s;
+    font-size: 14px;      
+    padding: 10px;       
+}
+
+
+
+.nav-links a:hover {
+    background: #00d1ff;
+    color: #111;
+    box-shadow: 0 0 15px #00d1ff;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background: linear-gradient(135deg, #1a1f2b, #293145);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content span {
+    color: #00d1ff;
+}
+
+.hero-content .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.hero-img img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #00d1ff;
+    box-shadow: 0 0 20px rgba(0,209,255,0.6);
+}
+
+section {
+    padding: 80px 100px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #008bb7;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 50px;
+    font-weight: 1000;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 2px solid #00d1ff;
+
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,209,255,0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    background: #00d1ff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008bb7;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center;         
+  gap: 18px;                   
+  padding: 20px;
+  box-sizing: border-box;
+}
+.contact-box {
+  background-color: #ffffff; 
+  margin: 15px 0;
+  padding: 18px 25px;
+  border-radius: 15px;
+  border: 2px solid #00d1ff;
+  max-width: 600px;
+  max-height: 600px;
+  gap: 25px;
+  width: 350px; height: 90px;
+  font-weight: 1000;
+  color: #175e6d;
+}
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,209,255,0.3);
+}
+.contact-box:nth-child(2) a {
+  color: #09a7ca;
+}
+.contact-box:nth-child(3) a {
+  color: #09a7ca;
+}
+.contact-box:nth-child(4) a {
+  color: #09a7ca; 
+}
+.P1{
+  background-color: #ffffff; 
+  margin: 15px 0;
+  padding: 18px 25px;
+  border-radius: 15px;
+  border: 2px solid #00d1ff;
+  max-width: 500px;
+  max-height: 400px;
+  gap: 25px;
+  width: 300px; height: 80px;
+  font-weight: 600;
+  color: #175e6d;
+}
+#projects {
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center;         
+  gap: 18px;                   
+  padding: 20px;
+  box-sizing: border-box;
+}
+.about {
+    padding: 60px 20px;             
+    text-align: center;             
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #022229;                    
+    line-height: 1.7;              
+}
+.about p {
+    max-width: 800px;               
+    margin: 0 auto;                 
+    font-size: 1.4em;               
+    text-align: justify;            
+}
